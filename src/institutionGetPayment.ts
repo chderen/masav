@@ -111,7 +111,7 @@ export default class InstitutionGetPayment {
     );
     let sumAmount: number = this._payments
       .map((payment) => payment._amount)
-      .reduce((a, b) => a + b, 0);
+      .reduce((a, b) => a + Math.round(b * 100), 0) / 100;
     
     // Same as send payment but lines 7 & 8, and 9 & 10 are switched
     let sum = Buffer.concat([
