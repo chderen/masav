@@ -15,7 +15,8 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "version": "git add -A src",
-    "update-version": "npm version patch"
+    "update-version": "npm version patch",
+    "prepare": "npm run build"
   },
   "files": [
     "lib/**/*"
@@ -26,8 +27,8 @@
   },
   "keywords": [
     "masav",
-    "מסב",
-    "מס\"ב"
+    "\u05de\u05e1\u05d1",
+    "\u05de\u05e1\"\u05d1"
   ],
   "author": "Elisha Mayer",
   "license": "MIT",
